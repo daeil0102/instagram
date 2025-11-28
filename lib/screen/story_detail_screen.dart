@@ -29,7 +29,17 @@ class StoryDetailScreen extends StatelessWidget {
                 width: MediaQuery.widthOf(context),
                 height: MediaQuery.heightOf(context),
                 child: currentStory.isVideo
-                  ? VideoPlayer(videoController!)
+                  ? FittedBox(
+                  fit: BoxFit.cover,
+                  child: SizedBox(
+                    width: MediaQuery.widthOf(context),
+                    height: MediaQuery.heightOf(context),
+                    child: AspectRatio(
+                        aspectRatio: videoController!.value.aspectRatio,
+                        child: VideoPlayer(videoController)
+                    ),
+                  ),
+                )
                   : Image.network(
                     width: MediaQuery.widthOf(context),
                     height: MediaQuery.heightOf(context),
