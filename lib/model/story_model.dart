@@ -1,4 +1,4 @@
-import 'package:instargram/model/user_model.dart';
+import 'package:instagram/model/user_model.dart';
 
 class StoryModel {
   final UserModel creator;

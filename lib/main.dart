@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:instargram/Provider/app_provider.dart';
-import 'package:instargram/screen/main_tab_screen.dart';
+import 'package:instagram/Provider/app_provider.dart';
+import 'package:instagram/screen/main_tab_screen.dart';
 
 void main() {
   runApp(const InstagramApp());

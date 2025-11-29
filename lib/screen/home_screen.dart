@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:instargram/Provider/app_provider.dart';
+import 'package:instagram/Provider/app_provider.dart';
+import 'package:instagram/screen/story_detail_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -37,8 +38,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-
-                      });
+                        return StoryDetailScreen();
+                      }));
                     },
                     child: Column(
                       children: [

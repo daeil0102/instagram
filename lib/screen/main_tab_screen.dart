@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:instargram/Provider/app_provider.dart';
-import 'package:instargram/screen/home_screen.dart';
+import 'package:instagram/Provider/app_provider.dart';
+import 'package:instagram/screen/home_screen.dart';
 
 class MainTabScreen extends StatefulWidget {
   const MainTabScreen({super.key});

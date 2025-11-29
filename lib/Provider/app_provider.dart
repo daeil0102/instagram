@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:instargram/model/story_model.dart';
-import 'package:instargram/model/user_model.dart';
+import 'package:instagram/model/story_model.dart';
+import 'package:instagram/model/user_model.dart';
 
 final appProvider = AppProvider();
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instargram/Provider/app_provider.dart';
+import 'package:instagram/Provider/app_provider.dart';
 import 'package:video_player/video_player.dart';
 
 class StoryDetailScreen extends StatelessWidget {
@@ -25,28 +25,20 @@ class StoryDetailScreen extends StatelessWidget {
 
           return Stack(
             children: [
-              Container(
-                width: MediaQuery.widthOf(context),
-                height: MediaQuery.heightOf(context),
-                child: currentStory.isVideo
-                  ? FittedBox(
-                  fit: BoxFit.cover,
+              currentStory.isVideo
+                  ? Transform.scale(
+                  scale: 2,
                   child: SizedBox(
-                    width: MediaQuery.widthOf(context),
-                    height: MediaQuery.heightOf(context),
-                    child: AspectRatio(
-                        aspectRatio: videoController!.value.aspectRatio,
-                        child: VideoPlayer(videoController)
-                    ),
+                    width: MediaQuery.widthOf(context) * 2,
+                    child: VideoPlayer(videoController!),
                   ),
                 )
-                  : Image.network(
-                    width: MediaQuery.widthOf(context),
-                    height: MediaQuery.heightOf(context),
-                    fit: BoxFit.cover,
-                    currentStory.contentUrl
+                : Image.network(
+                  width: MediaQuery.widthOf(context),
+                  height: MediaQuery.heightOf(context),
+                  fit: BoxFit.cover,
+                  currentStory.contentUrl
                 )
-              )
             ],
           );
         }
