@@ -3,7 +3,7 @@ import 'package:instagram/model/user_model.dart';
 class FeedModel {
   final int id;
   final String ?description;
-  final UserModel userModel;
+  final UserModel creator;
   final int favoriteCount;
   final int commentCount;
   final int sharedCount;
@@ -12,7 +12,7 @@ class FeedModel {
   FeedModel({
     required this.id,
     required this.description,
-    required this.userModel,
+    required this.creator,
     required this.favoriteCount,
     required this.commentCount,
     required this.sharedCount,
@@ -24,7 +24,7 @@ final feedList = [
   FeedModel(
       id: 1,
       description: null,
-      userModel: userList[0],
+      creator: userList[0],
       favoriteCount: 2323,
       commentCount: 1212,
       sharedCount: 5656,
@@ -36,7 +36,7 @@ final feedList = [
   FeedModel(
       id: 2,
       description: "게시물 입니다.",
-      userModel: userList[1],
+      creator: userList[1],
       favoriteCount: 84848,
       commentCount: 01092,
       sharedCount: 68499,
@@ -49,7 +49,7 @@ final feedList = [
   FeedModel(
       id: 3,
       description: "게시물 매우 긴 설명 내용들 입니다...................................!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-      userModel: userList[2],
+      creator: userList[2],
       favoriteCount: 91728,
       commentCount: 69781,
       sharedCount: 919388,

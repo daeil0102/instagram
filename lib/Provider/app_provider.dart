@@ -46,10 +46,37 @@ class AppProvider {
   }
 
   List<FeedModel> homeFeedList = [];
+  List<int> favoriteFeedIdList= [];
+  List<int> moveFeedIdList= [];
 
   void loadFeedList() {
     homeFeedList = feedList;
     updataScreen();
   }
 
+  void toggleFavoriteFeed(int feedId) {
+    if (favoriteFeedIdList.contains(feedId)) {
+      favoriteFeedIdList.remove(feedId);
+    } else {
+      favoriteFeedIdList.add(feedId);
+    }
+    updataScreen();
+  }
+
+  bool isFavoriteFeed(int feedId) {
+    return favoriteFeedIdList.contains(feedId);
+  }
+
+  void toggleMoveFeed(int feedId) {
+    if (moveFeedIdList.contains(feedId)) {
+      moveFeedIdList.remove(feedId);
+    } else {
+      moveFeedIdList.add(feedId);
+    }
+    updataScreen();
+  }
+
+  bool isMoveFeed(int feedId) {
+    return moveFeedIdList.contains(feedId);
+  }
 }
