@@ -2,7 +2,7 @@ import 'package:instagram/model/user_model.dart';
 
 class FeedModel {
   final int id;
-  final String description;
+  final String ?description;
   final UserModel userModel;
   final int favoriteCount;
   final int commentCount;
