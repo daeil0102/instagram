@@ -1,4 +1,8 @@
 import 'package:flutter/cupertino.dart';
+import 'package:instagram/model/feed_model.dart';
+// 뒤에 as <이름> 작성하면 어떤 이름으로 사용할지 정의할 수 있음
+// ex. import 'package:instagram/model/feed_model.dart' as feed;
+// 사용시 feed.FeedModel 이런식으로 사용할 수 있음
 import 'package:instagram/model/story_model.dart';
 import 'package:instagram/model/user_model.dart';
 
@@ -38,6 +42,13 @@ class AppProvider {
     // index0의 myStory 넣기
     followerStoryList?.insert(0, myStory!);
 
+    updataScreen();
+  }
+
+  List<FeedModel> homeFeedList = [];
+
+  void loadFeedList() {
+    homeFeedList = feedList;
     updataScreen();
   }
 
