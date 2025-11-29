@@ -44,5 +44,19 @@ final feedList = [
         "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA1MzBfMjM2%2FMDAxNzE3MDM2MTc1Mzk1.FhZOpRMOPaMkZWZ9S5UGXmrHTE4JKVpJZRlbJ_8FBwkg.bj24NEzllSZDU6RhHr1br3P9fr0jS-vRS9nS1qaYB3Qg.JPEG%2F6.JPG&type=sc960_832",
         "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODA3MDRfMjk5%2FMDAxNTMwNzE0NDY4NTEz.OemrOJ8e1lximkEkuHaP_GmavSvlT_JQFuVYGulbmOYg.fX0V2mfxj1scBQYuMc-mVzbOEluB1dt0abJhv7AMWL8g.JPEG.tpgml6817%2FP20180702_012616565_F4DDB8FC-A598-416E-83E3-C00558EAB5F7.JPG&type=sc960_832"
       ]
+  ),
+
+  FeedModel(
+      id: 3,
+      description: "게시물 매우 긴 설명 내용들 입니다...................................!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      userModel: userList[2],
+      favoriteCount: 91728,
+      commentCount: 69781,
+      sharedCount: 919388,
+      contents: [
+        "https://search.pstatic.net/common/?src=http%3A%2F%2Fimage.nmv.naver.net%2Fblog_2025_01_08_3863%2FY2qDkgQ7nA_01.jpg&type=sc960_832",
+        "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA5MTVfMjI4%2FMDAxNjYzMjQyMjkzNzIy.PKhuJh7f8qOTrAyZYfnEXAaF511K1dDq_7BrXM3wk64g.12CPChvrIm-R5GJXMAwn-29S16k5bZ0Pm3pFmwHmz4Qg.JPEG.tpgml6817%2FP20180709_020128787_C7C6EEEB-F483-4FA9-BB0D-224E6A219EF2.JPG&type=sc960_832"
+      ]
   )
+
 ];
